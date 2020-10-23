@@ -58,7 +58,6 @@
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    
 }
 
 .links__el {
@@ -90,13 +89,27 @@
     text-decoration: none;
     color: #CDCDCD;
 }
+
+.links__our-pets:hover {
+    color: #FAFAFA;
+}
+
 .links__help {
     text-decoration: none;
     color: #CDCDCD;
 }
+
+.links__help:hover {
+    color: #FAFAFA;
+}
+
 .links__contacts {
     text-decoration: none;
     color: #CDCDCD;
+}
+
+.links__contacts:hover {
+    color: #FAFAFA;
 }
 
 .first-page-middle-block {
@@ -108,7 +121,6 @@
     width: 1200px;
     height: 728px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -118,6 +130,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 163px;
 }
 .first-page-middle-block__title {
     width: 310px;
@@ -142,10 +155,23 @@
     color: #CDCDCD;
 }
 .first-page-middle-block__button {
-    background: url(./assets/make_friend.svg);
-    display: block;
     width: 207px;
     height: 52px;
+    bottom: 244px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: 0px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.first-page-middle-block__button:hover {
+    background: #FDDCC4;
 }
 
 .dog {
@@ -157,14 +183,15 @@
 
 
 .about-shelter {
-    height: 588px;
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 .about-shelter__content {
     width: 850px;
     height: 408px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 .about-shelter__dog {
@@ -220,7 +247,8 @@
 
 
 .our-friends {
-    height: 877px;
+    padding-top: 80px;
+    padding-bottom: 100px;
     background: #F6F6F6;
 }
 
@@ -228,13 +256,9 @@
     width: 1200px;
     height: 697px;
     margin: 0 auto;
-}
-
-.our-friends__title-wrapper {
-    height: 170px;
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .our-friends__title {
@@ -256,9 +280,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 60px;
 }
-.left-arrow {
+.left-arrow, .right-arrow {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -269,9 +292,15 @@
     border-radius: 100px;
     background: #F6F6F6;
 }
-.left-arrow__image {
+.left-arrow__image, .right-arrow__image {
     margin: auto auto;
 }
+
+.left-arrow:hover, .right-arrow:hover {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
 .pets-cards {
     width: 990px;
     height: 435px;
@@ -282,6 +311,12 @@
     background: #FAFAFA;
     border-radius: 9px;
 }
+
+.pet-card:hover {
+    background: white;
+    cursor: pointer;
+}
+
 .pet-card__content {    
     width: 270px;
     height: 405px;
@@ -313,20 +348,6 @@
     width: 187px;
     height: 52px;
     background: #FAFAFA;
-}
-.right-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 52px;
-    height: 52px;
-    border: 2px solid #F1CDB3;
-    box-sizing: border-box;
-    border-radius: 100px;
-    background: #F6F6F6;
-}
-.right-arrow__image {
-    margin: auto auto;
 }
 
 .get-to-know-the-rest {
@@ -374,7 +395,7 @@
     margin: 0 auto;
 }
 .how__title {
-    width: 308px;
+    width: 310px;
     height: 90px;
     left: 446px;
     font-family: Georgia;
@@ -382,8 +403,6 @@
     font-weight: normal;
     font-size: 35px;
     line-height: 130%;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
@@ -393,10 +412,9 @@
     width: 1026px;
     height: 281px;
     display: flex;
-    column-gap: 119px;
-    row-gap: 55px;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    row-gap: 55px;
+    justify-content: center;
 }
 
 .how__elem {
@@ -405,6 +423,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-right: 119px;
+}
+
+.how__elem:nth-of-type(4n + 5) {
+    margin-right: 0px;
 }
 
 .how__elem-about {
@@ -416,10 +439,6 @@
     letter-spacing: 0.06em;
     color: #545454;
 }
-
-
-
-
 
 .donation {
     padding-top: 81px;
@@ -486,7 +505,7 @@
     margin: auto auto;
 }
 
-.donation__main-part-button-link {
+.donation__main-part-button-card-number {
     width: 275px;
     height: 23px;
     font-family: Georgia;
