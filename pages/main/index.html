@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280">
+    <meta name="viewport" content="width=device-width">
     <title>Shelter</title>
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="./style.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1280px)" href="./style_768-1280.css">
-
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/pet-house.svg" sizes="any" type="image/svg+xml">
 </head>
 <body class="body">
@@ -31,10 +29,10 @@
                         <li class="links__el">
                             <a class="links__our-pets" href="../pets/index.html">Our pets</a>
                         </li>
-                        <li class="links__el">
+                        <li class="links__el non-active">
                             <a class="links__help" href="#">Help the shelter</a>
                         </li>
-                        <li class="links__el">
+                        <li class="links__el non-active">
                             <a class="links__contacts" href="#">Contacts</a>
                         </li>
                     </ul>
@@ -51,7 +49,7 @@
                     <div class="first-page-middle-block__description">
                         We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
                     </div>
-                    <a href="#" class="button">
+                    <a href="../pets/index.html" class="button make-button">
                         <button class="first-page-middle-block__button">
                             Make a friend
                         </button>
@@ -132,11 +130,13 @@
                 </button>
             </nav>
 
-            <button class="get-to-know-the-rest">
-                <span class="button-text">
-                    Get to know the rest
-                </span>
-            </button>
+            <a href="../pets/index.html" class="button">
+                <button class="get-to-know-the-rest">
+                    <span class="button-text">
+                        Get to know the rest
+                    </span>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -223,48 +223,51 @@
 
     <footer class="footer">
         <div class="footer__content">
-            <div class="footer__left-block">
-                <h2 class="footer__left-block-title">
-                    For questions and suggestions
-                </h2>
-
-                <div class="footer__left-block-email">
-                    <a href="mailto:email@shelter.com">
-                        <img src="./assets/icon-email.svg" alt="email icon" class="footer__left-block-email-image">
-                    </a>
-                    <a href="mailto:email@shelter.com" class="footer__left-block-email-address">email@shelter.com</a>
+            <div class="footer__blocks">
+                <div class="footer__left-block">
+                    <h2 class="footer__left-block-title">
+                        For questions and suggestions
+                    </h2>
+    
+                    <div class="footer__left-block-email">
+                        <a href="mailto:email@shelter.com">
+                            <img src="./assets/icon-email.svg" alt="email icon" class="footer__left-block-email-image">
+                        </a>
+                        <a href="mailto:email@shelter.com" class="footer__left-block-email-address">email@shelter.com</a>
+                    </div>
+    
+                    <div class="footer__left-block-phone">
+                        <a href="tel:+136745677554">
+                            <img src="./assets/icon-phone.svg" alt="phone icon" class="footer__left-block-phone-image">
+                        </a>
+    
+                        <a href="tel:+136745677554" class="footer__left-block-phone-number">+13 674 567 75 54</a>
+                    </div>
                 </div>
-
-                <div class="footer__left-block-phone">
-                    <a href="tel:+136745677554">
-                        <img src="./assets/icon-phone.svg" alt="phone icon" class="footer__left-block-phone-image">
-                    </a>
-
-                    <a href="tel:+136745677554" class="footer__left-block-phone-number">+13 674 567 75 54</a>
+    
+                <div class="footer__center-block">
+                    <h2 class="footer__center-block-title">
+                        We are waiting for your visit
+                    </h2>
+    
+                    <div class="footer__center-block-first-address">
+                        <a href="https://goo.gl/maps/iDtdYcymdH1gtbPq6" target="_blank">
+                            <img src="./assets/icon-marker.svg" alt="icon marker" class="footer__center-block-adress-image">
+                        </a>
+                        
+                        <a href="https://goo.gl/maps/iDtdYcymdH1gtbPq6" target="_blank" class="footer__center-block-exact-first-address">1 Central Street, Boston (entrance from the store)</a>
+                    </div>
+    
+                    <div class="footer__center-block-second-address">
+                        <a href="https://goo.gl/maps/7GuwZdWsoG6d7aGA8" target="_blank">
+                            <img src="./assets/icon-marker.svg" alt="icon marker" class="footer__center-block-adress-image">
+                        </a>
+    
+                        <a href="https://goo.gl/maps/7GuwZdWsoG6d7aGA8" target="_blank" class="footer__center-block-exact-second-address">18 South Park, London</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer__center-block">
-                <h2 class="footer__center-block-title">
-                    We are waiting for your visit
-                </h2>
-
-                <div class="footer__center-block-first-address">
-                    <a href="https://www.google.com/maps/place/%D0%9E%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%93%D1%80%D0%B8%D1%84%D1%84%D0%B8%D1%82/@34.1184341,-118.3025822,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bf61e9d408cb:0x73ff07b1c2d6dadc!8m2!3d34.1184341!4d-118.3003935" target="_blank">
-                        <img src="./assets/icon-marker.svg" alt="icon marker" class="footer__center-block-adress-image">
-                    </a>
-                    
-                    <a href="https://www.google.com/maps/place/%D0%9E%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%93%D1%80%D0%B8%D1%84%D1%84%D0%B8%D1%82/@34.1184341,-118.3025822,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bf61e9d408cb:0x73ff07b1c2d6dadc!8m2!3d34.1184341!4d-118.3003935" target="_blank" class="footer__center-block-exact-first-address">1 Central Street, Boston (entrance from the store)</a>
-                </div>
-
-                <div class="footer__center-block-second-address">
-                    <a href="https://www.google.com/maps/place/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D0%97%D0%B5%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F/@-39.3841832,157.3144567,4z/data=!3m1!4b1!4m5!3m4!1s0x6d2c200e17779687:0xb1d618e2756a4733!8m2!3d-40.900557!4d174.885971" target="_blank">
-                        <img src="./assets/icon-marker.svg" alt="icon marker" class="footer__center-block-adress-image">
-                    </a>
-
-                    <a href="https://www.google.com/maps/place/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D0%97%D0%B5%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F/@-39.3841832,157.3144567,4z/data=!3m1!4b1!4m5!3m4!1s0x6d2c200e17779687:0xb1d618e2756a4733!8m2!3d-40.900557!4d174.885971" target="_blank" class="footer__center-block-exact-second-address">18 South Park, London</a>
-                </div>
-            </div>
+            
 
             <img src="./assets/footer-puppy.svg" alt="footer puppy" class="footer-dog">
         </div>

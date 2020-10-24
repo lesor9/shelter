@@ -1,17 +1,24 @@
+@font-face {
+    font-family: "Georgia";
+    src: url(../assets/fonts/Georgia/Georgia-Regular.ttf);
+    font-weight: 400
+}
+
 .body {
     font-family: Georgia;
     font-style: normal;
     font-weight: normal;
-    min-width: 1280px;
 }
 
 .first-block {
     height: 908px;
     background: url(./assets/noise_transparent.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    width: 100%;
 }
+
 .header {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
     height: 60px;
     padding: 60px 40px 0px 40px;
     margin-bottom: 60px;
@@ -122,17 +129,20 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 160%;
-    
 }
 
 .active-text {
     color: #FAFAFA;
 }
 
+.non-active {
+    pointer-events: none;
+}
+
 
 .first-page-middle-block {
     margin-left: 40px;
-    width: 1200px;
+    max-width: 1200px;
     height: 728px;
     margin: 0 auto;
 }
@@ -364,6 +374,12 @@
     background: #FAFAFA;
 }
 
+.pet-card__button:hover {
+    background: #FDDCC4;
+    border-radius: 100px;
+    border: 0px;
+}
+
 .get-to-know-the-rest {
     display: flex;
     flex-direction: column;
@@ -389,6 +405,10 @@
     letter-spacing: 0.06em;
     color: #292929;
     margin: auto auto;
+}
+
+.button {
+    text-decoration: none;
 }
 
 
@@ -548,6 +568,7 @@
 .footer {
     background: url(./assets/noise_transparent.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     padding-top: 40px;
+    width: 100%;
 }
 .footer__content {
     width: 1200px;
@@ -556,6 +577,12 @@
     justify-content: space-between;
     margin: 0 auto;
 }
+
+.footer__blocks {
+    display: flex;
+    column-gap: 161px;
+}
+
 .footer__left-block {
     display: flex;
     flex-direction: column;
@@ -676,4 +703,119 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1279px) {
+    .first-block {
+        height: 1165px;
+    }
+
+    .header {
+        padding: 30px 30px 60px 30px;
+        margin-bottom: 0;
+    }
+
+    .first-page-middle-block__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 1015px;
+        width: 569px;
+        margin: 0 auto;
+    }
+
+    .dog {
+        width: 569px;
+        height: 593px;
+    }
+
+    .first-page-middle-block__left-part {
+        padding: 0;
+        height: 322px;
+        margin: 0 auto;
+    }
+
+    .first-page-middle-block {
+        margin-left: 40px;
+        max-width: 1200px;
+        height: 728px;
+        margin: 0 auto;
+    }
+
+    .make-button {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .about-shelter__content {
+        width: 437px;
+        height: 868px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+
+    .pet-card:nth-child(3) {
+        display: none;
+    }
+
+    .our-friends__content {
+        width: 708px;
+        height: 697px;
+    }
+
+    .pets-cards {
+        width: 580px;
+    }
+
+
+
+    .how__content {
+        width: 630px;
+        height: 599px;
+    }
+    
+    .how__elems {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 630px;
+        height: 449px;
+    }
+
+    .how__elem {
+        margin-right: 0px;
+    }
+
+    .donation__content {
+        width: 437px;
+        height: 603px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer__content {
+        width: 640px;
+        height: 609px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__blocks {
+        display: flex;
+        column-gap: 61px;
+    }
 }
