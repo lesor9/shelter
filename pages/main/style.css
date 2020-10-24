@@ -50,6 +50,12 @@
     align-items: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    padding-right: 2px;
+}
+
+.header__nav {
+    width: 443px;
+    height: 27px;
 }
 
 .links {
@@ -186,11 +192,6 @@
     background: #FDDCC4;
 }
 
-.dog {
-    background: url(./assets/puppy.svg);
-    width: 698px;
-    height: 728px;
-}
 
 
 
