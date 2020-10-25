@@ -18,7 +18,6 @@
 
 .header {
     margin: 0 auto;
-    max-width: 1200px;
     height: 60px;
     padding: 60px 40px 0px 40px;
     margin-bottom: 60px;
@@ -27,6 +26,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .left-logo {
     width: 186px;
@@ -139,6 +140,12 @@
     pointer-events: none;
 }
 
+.burger {
+    display: none;
+}
+
+
+
 
 .first-page-middle-block {
     margin-left: 40px;
@@ -198,6 +205,12 @@
     letter-spacing: 0.06em;
     color: #292929;
 }
+
+.make-button {
+    width: 207px;
+    height: 52px;
+}
+
 
 .first-page-middle-block__button:hover {
     background: #FDDCC4;
@@ -709,6 +722,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1279px) {
     .first-block {
         height: 1165px;
@@ -717,6 +753,10 @@
     .header {
         padding: 30px 30px 60px 30px;
         margin-bottom: 0;
+    }
+
+    .header__content {
+        max-width: 708px;
     }
 
     .first-page-middle-block__content {
@@ -862,6 +902,10 @@
         margin-bottom: 0;
     }
 
+    .header__content {
+        max-width: 257px;
+    }
+
     .first-page-middle-block__title {
         font-size: 25px;
         height: 64px;
@@ -875,8 +919,21 @@
         text-align: center;
     }
 
+    .first-page-middle-block__left-part {
+        align-items: center;
+    }
+
     .header__nav {
         display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 30px;
+        height: 22px;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
     }
 
     .first-page-middle-block__content {
@@ -913,6 +970,7 @@
     .make-button {
         display: flex;
         justify-content: center;
+
     }
 
 
@@ -977,6 +1035,8 @@
     .our-friends__content {
         width: 300px;
         height: 707px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .pets-cards {
@@ -989,16 +1049,19 @@
     }
 
     .our-friends__middle-part {
-        flex-direction: column;
+        flex-wrap: wrap;
+        width: 270px;
+        height: 507px;
     }
 
     .left-arrow {
         order: 1;
-        margin: 0 40px
+        margin: 0 40px;
     }
 
     .right-arrow {
         order: 2;
+        margin: 0 40px;
     }
     
     .our-friends {
