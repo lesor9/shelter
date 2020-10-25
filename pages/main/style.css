@@ -219,10 +219,8 @@
     margin: 0 auto;
 }
 .about-shelter__dog {
-    background: url(./assets/about-pets.svg);
     width: 300px;
     height: 408px;
-    display: block;
 }
 
 .description-part {
@@ -733,6 +731,7 @@
     .dog {
         width: 569px;
         height: 593px;
+        margin-left: 95px;
     }
 
     .first-page-middle-block__left-part {
@@ -817,5 +816,354 @@
     .footer__blocks {
         display: flex;
         column-gap: 61px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .first-block {
+        height: 823px;
+    }
+
+    .header {
+        padding: 30px 53px 60px 10px;
+        margin-bottom: 0;
+    }
+
+    .first-page-middle-block__title {
+        font-size: 25px;
+        height: 64px;
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .first-page-middle-block__description {
+        text-align: center;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .first-page-middle-block__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 673px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .dog {
+        width: 260px;
+        height: 271.77px;
+        margin-left: 15%;
+    }
+
+    .first-page-middle-block__left-part {
+        padding: 0;
+        height: 322px;
+        margin: 0 auto;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .first-page-middle-block {
+        margin-left: 40px;
+        max-width: 1200px;
+        height: 673px;
+        margin: 0 auto;
+    }
+
+    .make-button {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .about-shelter {
+        padding-top: 42px;
+        padding-bottom: 42.4px;
+        margin: 0 auto;
+    }
+
+    .about-shelter__content {
+        width: 300px;
+        height: 890px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .description-part {
+        width: 300px;
+        height: 494px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .description-part__title {
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .description-part__first-desc {
+        width: 270px;
+        height: 144px;
+        text-align: justify;
+    }
+    .description-part__second-desc {
+        width: 270px;
+        height: 239px;
+        text-align: justify;
+    }
+
+    .about-shelter__dog {
+        width: 260px;
+        height: 353.6px;
+    }
+
+    
+
+
+
+
+    .pet-card:nth-child(n) {
+        display: flex;
+    }
+
+    .pet-card:nth-child(n+2) {
+        display: none;
+    }
+
+    .our-friends__content {
+        width: 300px;
+        height: 707px;
+    }
+
+    .pets-cards {
+        width: 270px;
+    }
+
+    .our-friends__title {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .our-friends__middle-part {
+        flex-direction: column;
+    }
+
+    .left-arrow {
+        order: 1;
+        margin: 0 40px
+    }
+
+    .right-arrow {
+        order: 2;
+    }
+    
+    .our-friends {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+
+
+
+
+
+
+
+
+    .how {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    .how__title {
+        font-size: 25px;
+    }
+
+    .how__content {
+        width: 290px;
+        height: 661px;
+    }
+    
+    .how__elems {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 87px);
+        width: 290px;
+        height: 555px;
+        row-gap: 30px;
+    }
+
+    .how__elem {
+        margin-right: 0px;
+        height: 87px;
+    }
+
+    .how__img {
+        width: 35%;
+    }
+    
+    .how__elem-about {
+        font-size: 15px;
+    }
+
+
+
+    .donation {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    .donation__content {
+        width: 280px;
+        height: 458px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .donation__main-part {
+        width: 300px;
+        height: 281px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .donation__main-part-title {
+        font-size: 25px;
+        height: 62px;
+        text-align: center;
+    }
+
+    .donation__main-part-name-bank {
+        width: 309px;
+        height: 24px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160%;
+        color: #545454;
+    }
+
+    .donation__main-part-button {
+        width: 281px;
+        height: 43px;
+    }
+
+    .donation__main-part-button-content {
+        width: 251px;
+        height: 23px;
+    }
+
+    .donation__main-part-button-card-number {
+        font-size: 15px;
+        line-height: 110%;
+        width: 206px;
+        height: 17px;
+    }
+
+    .donation__main-part-info {
+        text-align: justify;
+        width: 280px;
+        height: 90px;
+    }
+
+    .donation__dog-img{
+        width: 260px;
+        height: 135.2px;
+    }
+
+
+
+    .footer {
+        padding-top: 30px;
+        height: 779px;
+    }
+
+    .footer__content {
+        width: 300px;
+        height: 779px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__blocks {
+        display: flex;
+        row-gap: 40px;
+        flex-direction: column;
+        width: 300px;
+        height: 470px;
+    }
+
+    .footer__left-block {
+        align-items: center;
+        padding-top: 0;
+        height: 208px;
+    }
+
+    .footer__center-block {
+        align-items: center;
+        height: 222px;
+        padding-top: 0;
+    }
+
+    .footer-dog {
+        width: 260px;
+        height: 269px;
+    }
+
+    .footer__left-block-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer__center-block-title {
+        font-size: 25px;
+        text-align: center;
     }
 }
