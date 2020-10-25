@@ -501,11 +501,17 @@
         height: 609px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .footer__blocks {
         display: flex;
         column-gap: 61px;
+    }
+
+    .footer-dog {
+        width: 300px;
+        height: 310px;
     }
 }
 

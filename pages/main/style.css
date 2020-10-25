@@ -541,15 +541,6 @@
     background: #f5dcc9;
 }
 
-.donation__main-part-button-content {
-    width: 319px;
-    height: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto auto;
-}
-
 .donation__main-part-button-card-number {
     width: 275px;
     height: 23px;
@@ -790,6 +781,7 @@
     .make-button {
         display: flex;
         justify-content: center;
+        align-self: center;
     }
 
 
@@ -851,11 +843,17 @@
         height: 609px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .footer__blocks {
         display: flex;
         column-gap: 61px;
+    }
+
+    .footer-dog {
+        width: 300px;
+        height: 310px;
     }
 }
 
@@ -1155,11 +1153,6 @@
     .donation__main-part-button {
         width: 281px;
         height: 43px;
-    }
-
-    .donation__main-part-button-content {
-        width: 251px;
-        height: 23px;
     }
 
     .donation__main-part-button-card-number {
