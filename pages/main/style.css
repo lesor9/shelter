@@ -535,6 +535,10 @@
     background: #F1CDB3;
     border-radius: 9px;
     border-width: 0px;
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .donation__main-part-button:hover {
