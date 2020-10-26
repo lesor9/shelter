@@ -1,6 +1,7 @@
-const burgerBtn = document.querySelector(".burger__img"),
+const burgerBtn = document.querySelector(".burger"),
+    orangeBurgerBrn = document.querySelector(".burger-orange"),
     petsBurgerBtn = document.querySelector(".our-pets-burger"),
-    overlayBtn = document.querySelector(".navigation-overlay");
+    overlayBtn = document.querySelector(".navigation-overlay"),
     body = document.querySelector(".body");
 
 burgerBtn.addEventListener('click', () => {
