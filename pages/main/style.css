@@ -1,13 +1,11 @@
-@font-face {
-    font-family: "Georgia";
-    src: url(../assets/fonts/Georgia/Georgia-Regular.ttf);
-    font-weight: 400
-}
-
 .body {
     font-family: Georgia;
     font-style: normal;
     font-weight: normal;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .first-block {
@@ -65,6 +63,14 @@
 .header__nav {
     width: 443px;
     height: 27px;
+}
+
+.burger-nav {
+    position: fixed;
+    top: 0px;
+    right: -320px;
+    transition: 0.75s;
+    display: none;
 }
 
 .links {
@@ -142,6 +148,7 @@
 
 .burger {
     display: none;
+    transition: 0.75s;
 }
 
 
@@ -904,9 +911,6 @@
         margin-bottom: 0;
     }
 
-    .header__content {
-        max-width: 257px;
-    }
 
     .first-page-middle-block__title {
         font-size: 25px;
@@ -1225,5 +1229,90 @@
     .footer__center-block-title {
         font-size: 25px;
         text-align: center;
+    }
+
+
+
+
+
+    .navigation-overlay {
+        display: none;
+        position: fixed;
+        z-index: 500;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(41, 41, 41, 0.6);
+    }
+
+    .change-burger .navigation-overlay {
+        display: block;
+    }
+
+    .change-burger .burger-nav{
+        right: 0px;
+        z-index: 800;
+    }
+
+    .change-burger .burger {
+        z-index: 999;
+        transform: rotate(-90deg);
+        position: fixed;
+        top: 45px;
+        right: 53px;
+    }
+
+    .burger-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: #292929;
+    }
+
+    .burger-header {
+        width: 252px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        margin-right: 53px;
+        padding: 30px 10px 0px 10px;
+        align-self: flex-start;
+
+    }
+    .logo {
+        width: 184px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .logo-text__shelter-name {
+        width: 186px;
+        height: 35px;
+    }
+
+    .links {
+        width: 250px;
+        height: 327px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-content: center;
+        align-self: center;
+    }
+    .links__el {
+        font-size: 32px;
+        color: #CDCDCD;
+        margin: 0;
+        height: 51px;
     }
 }

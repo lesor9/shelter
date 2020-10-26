@@ -12,7 +12,7 @@
     <section class="first-block">
         <header class="header">
             <div class="header__content">
-                <div class="left-logo">
+                <div class="left-logo non-active">
                     <h1 class="logo-text__shelter-name">
                         Cozy House
                     </h1>
@@ -24,7 +24,7 @@
                 <nav class="header__nav">
                     <ul class="links">
                         <li class="links__el active">
-                            <a class="links__about active-text" href="./index.html">About the shelter</a>
+                            <a class="links__about active-text" href="#">About the shelter</a>
                         </li>
                         <li class="links__el">
                             <a class="links__our-pets" href="../pets/index.html">Our pets</a>
@@ -41,6 +41,38 @@
                 <button class="burger"> 
                     <img src="./assets/Burger.svg" alt="burger" class="burger__img">
                 </button>
+
+                <div class="navigation-overlay"></div>
+
+                <nav class="burger-nav">
+                    <div class="burger-header">
+                        <div class="logo">
+                            <h1 class="logo-text__shelter-name">
+                                Cozy House
+                            </h1>
+                            <div class="logo-text__shelter-description">
+                                Shelter for pets in Boston
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../../" alt="" class="a">
+
+
+                    <ul class="links">
+                        <li class="links__el active">
+                            <a class="links__about active-text about-burger" href="#">About the shelter</a>
+                        </li>
+                        <li class="links__el">
+                            <a class="links__our-pets" href="../pets/index.html">Our pets</a>
+                        </li>
+                        <li class="links__el non-active">
+                            <a class="links__help" href="#">Help the shelter</a>
+                        </li>
+                        <li class="links__el non-active">
+                            <a class="links__contacts" href="#">Contacts</a>
+                        </li>
+                    </ul>                    
+                </nav>
             </div>
         </header>
 
@@ -274,5 +306,7 @@
             <img src="./assets/footer-puppy.png" alt="footer puppy" class="footer-dog">
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
