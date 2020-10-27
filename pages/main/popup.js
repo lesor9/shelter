@@ -89,13 +89,11 @@ let petsList = [
     }
   ];
 
-// console.log(petsList);
 
 window.addEventListener('load', () => {
 
 setTimeout(() => {
     const petsBtns = document.getElementsByClassName('pet-card');
-    console.log(petsBtns);
 
     for (let key = 0; key < petsBtns.length; key++) {
         petsBtns[key].addEventListener("click", (e) => {
@@ -163,7 +161,6 @@ setTimeout(() => {
                         popBtn.classList.remove("strel");
                     }   
                 
-                console.log(e.toElement.className);
             }) 
 
         });
