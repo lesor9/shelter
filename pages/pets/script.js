@@ -229,19 +229,35 @@ function checkNavStatus() {
 
     if (page.innerHTML == howManyPg) {
         rightArrowBtn.style.cssText = "border: 2px solid #CDCDCD; cursor: no-drop;";
-    } else rightArrowBtn.style.cssText = "";
+        document.querySelector(".slider__right-span").style.cssText = "color: #CDCDCD";
+    } else {
+        rightArrowBtn.style.cssText = "";
+        document.querySelector(".slider__right-span").style.cssText = "color: #292929";
+    } 
 
     if (page.innerHTML > 1) {
         leftArrowBtn.style.cssText = "border: 2px solid #F1CDB3; cursor: pointer;";
-    } else leftArrowBtn.style.cssText = "";
+        document.querySelector(".slider__left-span").style.cssText = "color: #292929;";
+    } else {
+        leftArrowBtn.style.cssText = "";
+        document.querySelector(".slider__left-span").style.cssText = "color: #CDCDCD;";
+    }
 
     if (page.innerHTML == howManyPg) {
         fullRight.style.cssText = "border: 2px solid #CDCDCD; cursor: no-drop;";
-    } else fullRight.style.cssText = "";
+        document.querySelector(".slider__full-right-span").style.cssText = "color: #CDCDCD;";
+    } else {
+        fullRight.style.cssText = "";
+        document.querySelector(".slider__full-right-span").style.cssText = "color: #292929;";
+    }
 
     if (page.innerHTML > 1) {
         fullLeft.style.cssText = "border: 2px solid #F1CDB3; cursor: pointer;";
-    } else fullLeft.style.cssText = "";
+        document.querySelector(".slider__full-left-span").style.cssText = "color: #292929;";
+    } else {
+        fullLeft.style.cssText = "";
+        document.querySelector(".slider__full-left-span").style.cssText = "color: #CDCDCD;";
+    }
 }
 
 function howManyPages () {

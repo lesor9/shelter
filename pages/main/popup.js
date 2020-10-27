@@ -91,6 +91,8 @@ let petsList = [
 
 // console.log(petsList);
 
+window.addEventListener('load', () => {
+
 setTimeout(() => {
     const petsBtns = document.getElementsByClassName('pet-card');
     console.log(petsBtns);
@@ -167,8 +169,8 @@ setTimeout(() => {
         });
     }
 
-}, 2000);
-
+}, 1000);
+});
 
 
 {/* <div class="popup">

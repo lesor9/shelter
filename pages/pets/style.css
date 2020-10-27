@@ -5,6 +5,20 @@
     margin: 0 auto;
 }
 
+.slider-active {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.slider-deact {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+}
+
 .popup {
     display: none;
 }
