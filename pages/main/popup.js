@@ -91,9 +91,9 @@ let petsList = [
 
 // console.log(petsList);
 
-setTimeout(() => {
+window.addEventListener('load', () => {
     const petsBtns = document.getElementsByClassName('pet-card');
-    // console.log(petsBtns);
+    console.log(petsBtns);
 
     for (let key = 0; key < petsBtns.length; key++) {
         petsBtns[key].addEventListener("click", (e) => {
@@ -175,7 +175,7 @@ setTimeout(() => {
     // })
 
     
-}, 10);
+});
 
 
 
