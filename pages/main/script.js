@@ -77,9 +77,8 @@ const leftArrowBtn = document.querySelector(".left-arrow");
 const rightArrowBtn = document.querySelector(".right-arrow");
 
 leftArrowBtn.addEventListener('click', () => {
-    console.log("left");
-
-    for (let i = 0; i < 6; i++) {
+    const howManyElCount = howManyEl();
+    for (let i = 0; i < howManyElCount * 2 + 1; i++) {
         document.querySelector(".pets-cards").children[i].classList.add("over-card");
         document.querySelector(".pets-cards").children[i].classList.add("over-card-left");
     }
@@ -92,24 +91,37 @@ leftArrowBtn.addEventListener('click', () => {
     
 
     setTimeout(() => {
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < howManyElCount * 2 + 1; i++) {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-left");
             document.querySelector(".pets-cards").children[i].classList.add("over-card-back");
         } 
 
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < howManyElCount * 2 + 1; i++) {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card");
         }
 
-        document.querySelector(".pets-cards").removeChild(child3);
-        document.querySelector(".pets-cards").insertBefore(child3, asd[0]);
-        document.querySelector(".pets-cards").removeChild(child2);
-        document.querySelector(".pets-cards").insertBefore(child2, asd[0]);
-        document.querySelector(".pets-cards").removeChild(child1);
-        document.querySelector(".pets-cards").insertBefore(child1, asd[0]);
+        
+
+        if (howManyElCount === 3) {
+            document.querySelector(".pets-cards").removeChild(child3);
+            document.querySelector(".pets-cards").insertBefore(child3, asd[0]);
+            document.querySelector(".pets-cards").removeChild(child2);
+            document.querySelector(".pets-cards").insertBefore(child2, asd[0]);
+            document.querySelector(".pets-cards").removeChild(child1);
+            document.querySelector(".pets-cards").insertBefore(child1, asd[0]);
+        } else if (howManyElCount === 2) {
+            document.querySelector(".pets-cards").removeChild(child2);
+            document.querySelector(".pets-cards").insertBefore(child2, asd[0]);
+            document.querySelector(".pets-cards").removeChild(child1);
+            document.querySelector(".pets-cards").insertBefore(child1, asd[0]);
+        } else {
+            document.querySelector(".pets-cards").removeChild(child1);
+            document.querySelector(".pets-cards").insertBefore(child1, asd[0]);
+        };
+        
 
 
-        for (let i = 3; i < 9; i++) {
+        for (let i = 0; i <= 9; i++) {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-back");
         }
 
@@ -118,9 +130,8 @@ leftArrowBtn.addEventListener('click', () => {
 });
 
 rightArrowBtn.addEventListener('click', () => {
-    
-    console.log("right");
-    for (let i = 3; i < 9; i++) {
+    const howManyElCount = howManyEl();
+    for (let i = 2; i < 3 + 2 * howManyElCount; i++) {
         document.querySelector(".pets-cards").children[i].classList.add("over-card");
         document.querySelector(".pets-cards").children[i].classList.add("over-card-right");
     }
@@ -137,20 +148,39 @@ rightArrowBtn.addEventListener('click', () => {
         document.querySelector(".pets-cards").children[5].classList.add("over-card-back");
 
 
-        for (let i = 3; i < 9; i++) {
+        for (let i = 0; i < 3 + 2 * howManyElCount; i++) {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-right");
             document.querySelector(".pets-cards").children[i].classList.remove("over-card");
         }
+        if (howManyElCount === 3) {
+            document.querySelector(".pets-cards").removeChild(child1);
+            document.querySelector(".pets-cards").appendChild(child1);
+            document.querySelector(".pets-cards").removeChild(child2);
+            document.querySelector(".pets-cards").appendChild(child2);
+            document.querySelector(".pets-cards").removeChild(child3);
+            document.querySelector(".pets-cards").appendChild(child3);
+        } else if (howManyElCount === 2) {
+            document.querySelector(".pets-cards").removeChild(child1);
+            document.querySelector(".pets-cards").appendChild(child1);
+            document.querySelector(".pets-cards").removeChild(child2);
+            document.querySelector(".pets-cards").appendChild(child2);
+        } else {
+            document.querySelector(".pets-cards").removeChild(child1);
+            document.querySelector(".pets-cards").appendChild(child1);
+        }
+        
 
-        document.querySelector(".pets-cards").removeChild(child1);
-        document.querySelector(".pets-cards").appendChild(child1);
-        document.querySelector(".pets-cards").removeChild(child2);
-        document.querySelector(".pets-cards").appendChild(child2);
-        document.querySelector(".pets-cards").removeChild(child3);
-        document.querySelector(".pets-cards").appendChild(child3);
-
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 19; i++) {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-back");
         }
     }, 1000);
 });
+
+function howManyEl () {
+    const width = window.innerWidth;
+    if (width >= 1280) {
+        return 3;
+    } else if (width >= 768) {
+        return 2;
+    } else return 1;
+};

@@ -91,7 +91,7 @@ let petsList = [
 
 // console.log(petsList);
 
-window.addEventListener('load', () => {
+setTimeout(() => {
     const petsBtns = document.getElementsByClassName('pet-card');
     console.log(petsBtns);
 
@@ -167,15 +167,7 @@ window.addEventListener('load', () => {
         });
     }
 
-    // const overlay = document.querySelector(".popup-overlay");
-    // console.log(overlay);
-    // overlay.addEventListener('click', () => {
-    //     body.classList.toggle("overlay"); 
-    //     body.classList.toggle("overflow-hidden");
-    // })
-
-    
-});
+}, 2000);
 
 
 

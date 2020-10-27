@@ -984,10 +984,6 @@
         left: -620px;
     }
 
-    .pet-card:nth-child(3) {
-        display: none;
-    }
-
     .our-friends__content {
         width: 708px;
         height: 697px;
@@ -999,7 +995,7 @@
     }
 
     .over-card-right{
-        transform: translateX(-62px);
+        transform: translateX(-620px);
     }
 
     .over-card-left {
