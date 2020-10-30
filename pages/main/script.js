@@ -87,6 +87,7 @@ leftArrowBtn.addEventListener('click', () => {
     const child2 = asd[asd.length -2];
     const child3 = asd[asd.length -3];
     
+    rightArrowBtn.disabled = true;
     leftArrowBtn.disabled = true;
 
     setTimeout(() => {
@@ -124,6 +125,7 @@ leftArrowBtn.addEventListener('click', () => {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-back");
         }
 
+        rightArrowBtn.disabled = false;
         leftArrowBtn.disabled = false;
     }, 1000);
     
@@ -143,6 +145,7 @@ rightArrowBtn.addEventListener('click', () => {
     const child3 = asd[2];
 
     rightArrowBtn.disabled = true;
+    leftArrowBtn.disabled = true;
     
     setTimeout(() => {
         document.querySelector(".pets-cards").children[3].classList.add("over-card-back");
@@ -177,6 +180,7 @@ rightArrowBtn.addEventListener('click', () => {
         }
 
         rightArrowBtn.disabled = false;
+        leftArrowBtn.disabled = false;
     }, 1000);
 });
 
