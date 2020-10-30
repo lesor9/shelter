@@ -32,9 +32,7 @@ request.onload = () => {
 
         let elem = newPets.splice([randInd], 1)[0];
         newPets.push(elem);
-        console.log(elem["name"]);
     }
-    console.log("---------");
 
     createPets(newPets);
 }
@@ -89,6 +87,7 @@ leftArrowBtn.addEventListener('click', () => {
     const child2 = asd[asd.length -2];
     const child3 = asd[asd.length -3];
     
+    leftArrowBtn.disabled = true;
 
     setTimeout(() => {
         for (let i = 0; i < howManyElCount * 2 + 1; i++) {
@@ -125,6 +124,7 @@ leftArrowBtn.addEventListener('click', () => {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-back");
         }
 
+        leftArrowBtn.disabled = false;
     }, 1000);
     
 });
@@ -141,6 +141,8 @@ rightArrowBtn.addEventListener('click', () => {
     const child1 = asd[0];
     const child2 = asd[1];
     const child3 = asd[2];
+
+    rightArrowBtn.disabled = true;
     
     setTimeout(() => {
         document.querySelector(".pets-cards").children[3].classList.add("over-card-back");
@@ -170,9 +172,11 @@ rightArrowBtn.addEventListener('click', () => {
         }
         
 
-        for (let i = 0; i < 19; i++) {
+        for (let i = 0; i < 16; i++) {
             document.querySelector(".pets-cards").children[i].classList.remove("over-card-back");
         }
+
+        rightArrowBtn.disabled = false;
     }, 1000);
 });
 

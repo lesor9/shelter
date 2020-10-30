@@ -106,7 +106,6 @@ setTimeout(() => {
 
             petsList.forEach(e => {
                 if (e["name"] === petName) {
-                    console.log(e["name"]);
                     let str = '';
                     
 
